@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+
+<body>
+
+    <h1>Student Admission Form</h1>
+
+    <form>
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" required minlength="3" maxlength="20">
+        <br><br>
+
+        <label for="emailaddress">Email Address</label>
+        <input type="email" id="emailaddress" required>
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob">
+        <br><br>
+
+        <label for="">Address</label>
+        <textarea rows="5" cols="20"></textarea>
+
+        <br><br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <label for="">Select Course</label>
+        <select>
+            <option>MERN Stack</option>
+            <option>Data Analytics</option>
+            <option>Cyber Security</option>
+            <option>Data Science</option>
+            <option>Flutter</option>
+        </select>
+
+        <br><br>
+
+        <label for="">College Name</label>
+        <input type="text" list="college">
+
+        <datalist id="college">
+            <option>BBDU</option>
+            <option>SSG</option>
+            <option>DSMNRU</option>
+            <option>SRMU</option>
+            <option>SMS</option>
+        </datalist>
+
+        <br><br>
+
+        <input type="checkbox" id="terms">
+        <label for="terms">I accept terms & conditions</label>
+
+        <br><br>
+
+        <details>
+            <summary>View Terms & Conditions</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur quaerat libero fugiat hic
+                pariatur? Non, necessitatibus nihil quaerat deserunt molestiae, porro fuga aspernatur totam
+                reprehenderit consequuntur, neque ipsum numquam?</p>
+        </details>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
